@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C8FEF2FB84B7B00FB9D09 /* MyTextClassifierMessageShieldMLModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0A0C8FEE2FB84B7B00FB9D09 /* MyTextClassifierMessageShieldMLModel.mlmodel */; };
 		0AA7030B2FB83A3300C4621A /* MessageShieldProtoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7030A2FB83A3300C4621A /* MessageShieldProtoApp.swift */; };
 		0AA7030D2FB83A3300C4621A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7030C2FB83A3300C4621A /* ContentView.swift */; };
 		0AA7030F2FB83A3400C4621A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA7030E2FB83A3400C4621A /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		0AA7031C2FB83A3500C4621A /* MessageShieldProtoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7031B2FB83A3500C4621A /* MessageShieldProtoTests.swift */; };
 		0AA703262FB83A3500C4621A /* MessageShieldProtoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA703252FB83A3500C4621A /* MessageShieldProtoUITests.swift */; };
 		0AA703282FB83A3500C4621A /* MessageShieldProtoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA703272FB83A3500C4621A /* MessageShieldProtoUITestsLaunchTests.swift */; };
+		0AA7033F2FB83ACB00C4621A /* MessageShieldFilterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0AA703382FB83ACB00C4621A /* MessageShieldFilterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0AA703462FB83C3800C4621A /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA703442FB83C3700C4621A /* MessageFilterExtension.swift */; };
+		0AA703472FB83C3800C4621A /* MessageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA703452FB83C3700C4621A /* MessageClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +35,32 @@
 			remoteGlobalIDString = 0AA703062FB83A3300C4621A;
 			remoteInfo = MessageShieldProto;
 		};
+		0AA7033D2FB83ACB00C4621A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AA702FF2FB83A3300C4621A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AA703372FB83ACB00C4621A;
+			remoteInfo = MessageShield;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0AA703432FB83ACB00C4621A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0AA7033F2FB83ACB00C4621A /* MessageShieldFilterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0A0C8FEC2FB845A000FB9D09 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0C8FEE2FB84B7B00FB9D09 /* MyTextClassifierMessageShieldMLModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = MyTextClassifierMessageShieldMLModel.mlmodel; path = ../../MyTextClassifierMessageShieldMLModel.mlmodel; sourceTree = "<group>"; };
 		0AA703072FB83A3300C4621A /* MessageShieldProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageShieldProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA7030A2FB83A3300C4621A /* MessageShieldProtoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageShieldProtoApp.swift; sourceTree = "<group>"; };
 		0AA7030C2FB83A3300C4621A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +71,9 @@
 		0AA703212FB83A3500C4621A /* MessageShieldProtoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageShieldProtoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA703252FB83A3500C4621A /* MessageShieldProtoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageShieldProtoUITests.swift; sourceTree = "<group>"; };
 		0AA703272FB83A3500C4621A /* MessageShieldProtoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageShieldProtoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0AA703382FB83ACB00C4621A /* MessageShieldFilterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageShieldFilterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA703442FB83C3700C4621A /* MessageFilterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageFilterExtension.swift; path = ../../MessageFilterExtension.swift; sourceTree = "<group>"; };
+		0AA703452FB83C3700C4621A /* MessageClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageClassifier.swift; path = ../../MessageClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +98,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AA703352FB83ACB00C4621A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +114,7 @@
 				0AA703092FB83A3300C4621A /* MessageShieldProto */,
 				0AA7031A2FB83A3500C4621A /* MessageShieldProtoTests */,
 				0AA703242FB83A3500C4621A /* MessageShieldProtoUITests */,
+				0AA703392FB83ACB00C4621A /* MessageShieldFilterExtension */,
 				0AA703082FB83A3300C4621A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +125,7 @@
 				0AA703072FB83A3300C4621A /* MessageShieldProto.app */,
 				0AA703172FB83A3500C4621A /* MessageShieldProtoTests.xctest */,
 				0AA703212FB83A3500C4621A /* MessageShieldProtoUITests.xctest */,
+				0AA703382FB83ACB00C4621A /* MessageShieldFilterExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +166,17 @@
 			path = MessageShieldProtoUITests;
 			sourceTree = "<group>";
 		};
+		0AA703392FB83ACB00C4621A /* MessageShieldFilterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0A0C8FEE2FB84B7B00FB9D09 /* MyTextClassifierMessageShieldMLModel.mlmodel */,
+				0A0C8FEC2FB845A000FB9D09 /* Info.plist */,
+				0AA703452FB83C3700C4621A /* MessageClassifier.swift */,
+				0AA703442FB83C3700C4621A /* MessageFilterExtension.swift */,
+			);
+			path = MessageShieldFilterExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +187,12 @@
 				0AA703032FB83A3300C4621A /* Sources */,
 				0AA703042FB83A3300C4621A /* Frameworks */,
 				0AA703052FB83A3300C4621A /* Resources */,
+				0AA703432FB83ACB00C4621A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0AA7033E2FB83ACB00C4621A /* PBXTargetDependency */,
 			);
 			name = MessageShieldProto;
 			productName = MessageShieldProto;
@@ -183,6 +235,23 @@
 			productReference = 0AA703212FB83A3500C4621A /* MessageShieldProtoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0AA703372FB83ACB00C4621A /* MessageShieldFilterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA703402FB83ACB00C4621A /* Build configuration list for PBXNativeTarget "MessageShieldFilterExtension" */;
+			buildPhases = (
+				0AA703342FB83ACB00C4621A /* Sources */,
+				0AA703352FB83ACB00C4621A /* Frameworks */,
+				0AA703362FB83ACB00C4621A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageShieldFilterExtension;
+			productName = MessageShield;
+			productReference = 0AA703382FB83ACB00C4621A /* MessageShieldFilterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +273,10 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 0AA703062FB83A3300C4621A;
 					};
+					0AA703372FB83ACB00C4621A = {
+						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
+					};
 				};
 			};
 			buildConfigurationList = 0AA703022FB83A3300C4621A /* Build configuration list for PBXProject "MessageShieldProto" */;
@@ -222,6 +295,7 @@
 				0AA703062FB83A3300C4621A /* MessageShieldProto */,
 				0AA703162FB83A3500C4621A /* MessageShieldProtoTests */,
 				0AA703202FB83A3500C4621A /* MessageShieldProtoUITests */,
+				0AA703372FB83ACB00C4621A /* MessageShieldFilterExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +318,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0AA7031F2FB83A3500C4621A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AA703362FB83ACB00C4621A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +360,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AA703342FB83ACB00C4621A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AA703472FB83C3800C4621A /* MessageClassifier.swift in Sources */,
+				0AA703462FB83C3800C4621A /* MessageFilterExtension.swift in Sources */,
+				0A0C8FEF2FB84B7B00FB9D09 /* MyTextClassifierMessageShieldMLModel.mlmodel in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 0AA703062FB83A3300C4621A /* MessageShieldProto */;
 			targetProxy = 0AA703222FB83A3500C4621A /* PBXContainerItemProxy */;
+		};
+		0AA7033E2FB83ACB00C4621A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AA703372FB83ACB00C4621A /* MessageShieldFilterExtension */;
+			targetProxy = 0AA7033D2FB83ACB00C4621A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,11 +513,14 @@
 		0AA7032C2FB83A3500C4621A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MessageShieldProto/Preview Content\"";
+				DEVELOPMENT_TEAM = 38AV98LP96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -436,6 +535,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hillrg.MessageShieldProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,11 +545,14 @@
 		0AA7032D2FB83A3500C4621A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MessageShieldProto/Preview Content\"";
+				DEVELOPMENT_TEAM = 38AV98LP96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,6 +567,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hillrg.MessageShieldProto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -542,6 +646,63 @@
 			};
 			name = Release;
 		};
+		0AA703412FB83ACB00C4621A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38AV98LP96;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageShieldFilterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillrg.MessageShieldProto.MessageShieldFilterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0AA703422FB83ACB00C4621A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38AV98LP96;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageShieldFilterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hillrg.MessageShieldProto.MessageShieldFilterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +738,15 @@
 			buildConfigurations = (
 				0AA703322FB83A3500C4621A /* Debug */,
 				0AA703332FB83A3500C4621A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AA703402FB83ACB00C4621A /* Build configuration list for PBXNativeTarget "MessageShieldFilterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA703412FB83ACB00C4621A /* Debug */,
+				0AA703422FB83ACB00C4621A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSExtension</key>
+    <dict>
+        <!--
+            NSExtensionPointIdentifier MUST be this exact string.
+            It tells iOS this extension handles message filtering.
+        -->
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.identitylookup.message-filter</string>
+
+        <key>NSExtensionPrincipalClass</key>
+        <!--
+            Must match the class name in MessageFilterExtension.swift.
+            Format: $(PRODUCT_MODULE_NAME).ClassName
+        -->
+        <string>$(PRODUCT_MODULE_NAME).MessageFilterExtension</string>
+    </dict>
+
+    <!--
+        ILMessageFilterExtensionNetworkURL:
+        OMIT this key entirely to guarantee on-device-only operation.
+        If present, iOS will allow the extension to defer to a network
+        endpoint — which is exactly what we're avoiding.
+
+        If you WANT to call your own private server (and accept that
+        tradeoff), uncomment and set the URL:
+    -->
+    <!--
+    <key>ILMessageFilterExtensionNetworkURL</key>
+    <string>https://your-private-server.example.com/filter</string>
+    -->
+</dict>
+</plist>
